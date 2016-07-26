@@ -14,6 +14,8 @@
 		24D2349B1D47CDA200D41908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D234991D47CDA200D41908 /* LaunchScreen.storyboard */; };
 		24D234A61D47CDA200D41908 /* College_Profile_BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D234A51D47CDA200D41908 /* College_Profile_BuilderTests.swift */; };
 		24D234B11D47CDA200D41908 /* College_Profile_BuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D234B01D47CDA200D41908 /* College_Profile_BuilderUITests.swift */; };
+		24D234BF1D47CE0800D41908 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D234BE1D47CE0800D41908 /* College.swift */; };
+		24D234C11D47CFC000D41908 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D234C01D47CFC000D41908 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		24D234AC1D47CDA200D41908 /* College Profile BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College Profile BuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D234B01D47CDA200D41908 /* College_Profile_BuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_Profile_BuilderUITests.swift; sourceTree = "<group>"; };
 		24D234B21D47CDA200D41908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D234BE1D47CE0800D41908 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
+		24D234C01D47CFC000D41908 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				24D234901D47CDA200D41908 /* AppDelegate.swift */,
 				24D234921D47CDA200D41908 /* ViewController.swift */,
+				24D234C01D47CFC000D41908 /* DetailViewController.swift */,
+				24D234BE1D47CE0800D41908 /* College.swift */,
 				24D234941D47CDA200D41908 /* Main.storyboard */,
 				24D234971D47CDA200D41908 /* Assets.xcassets */,
 				24D234991D47CDA200D41908 /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				24D234931D47CDA200D41908 /* ViewController.swift in Sources */,
 				24D234911D47CDA200D41908 /* AppDelegate.swift in Sources */,
+				24D234BF1D47CE0800D41908 /* College.swift in Sources */,
+				24D234C11D47CFC000D41908 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
