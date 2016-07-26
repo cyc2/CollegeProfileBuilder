@@ -20,11 +20,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.tag = 0
-        colleges.append(College(name: "Berkeley", location: "Berkeley, CA", enrollment: 37581, image: UIImage(named: "berkeley")!))
-        colleges.append(College(name: "CSUMB", location: "Monterey, CA", enrollment: 5173, image: UIImage(named: "csumb")!))
-        colleges.append(College(name: "Stanford", location: "Stanford, CA", enrollment: 16136, image: UIImage(named: "stanford")!))
-        colleges.append(College(name: "UCLA", location: "Los Angeles, CA", enrollment: 43239, image: UIImage(named: "ucla")!))
-        colleges.append(College(name: "USC", location: "Los Angeles, CA", enrollment: 43000, image: UIImage(named: "usc")!))
+        colleges.append(College(name: "Berkeley", location: "Berkeley, CA", enrollment: 37581, url: "https://www.berkeley.edu", image: UIImage(named: "berkeley")!))
+        colleges.append(College(name: "CSUMB", location: "Monterey, CA", enrollment: 5173, url: "https://csumb.edu", image: UIImage(named: "csumb")!))
+        colleges.append(College(name: "Stanford", location: "Stanford, CA", enrollment: 16136, url: "https://www.stanford.edu", image: UIImage(named: "stanford")!))
+        colleges.append(College(name: "UCLA", location: "Los Angeles, CA", enrollment: 43239, url: "https://www.ucla.edu", image: UIImage(named: "ucla")!))
+        colleges.append(College(name: "USC", location: "Los Angeles, CA", enrollment: 43000, url: "https://www.usc.edu", image: UIImage(named: "usc")!))
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

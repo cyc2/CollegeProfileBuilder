@@ -90,38 +90,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAU-QB-uzG">
-                                <rect key="frame" x="252" y="110" width="97" height="30"/>
+                                <rect key="frame" x="226" y="72" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3k-3o-72R">
-                                <rect key="frame" x="252" y="169" width="97" height="30"/>
+                                <rect key="frame" x="226" y="110" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04I-fM-TPF">
-                                <rect key="frame" x="252" y="228" width="97" height="30"/>
+                                <rect key="frame" x="226" y="191" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-fI-gxd">
-                                <rect key="frame" x="180" y="305" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-fI-gxd">
+                                <rect key="frame" x="176" y="238" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="FGX-Qf-Org"/>
+                                    <constraint firstAttribute="height" constant="250" id="Sfh-o6-tlb"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAF-Rf-YTL">
+                                <rect key="frame" x="226" y="153" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JD-dG-cdW">
-                                <rect key="frame" x="283" y="480" width="34" height="30"/>
+                                <rect key="frame" x="283" y="525" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="onTappedSaveButton:" destination="ywW-O0-o3P" eventType="touchUpInside" id="Ocg-AV-X3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-Lf-axt">
+                                <rect key="frame" x="454" y="348" width="48" height="30"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="onLibraryButtonTapped:" destination="ywW-O0-o3P" eventType="touchUpInside" id="cDd-06-5eG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNK-UX-cYN">
+                                <rect key="frame" x="396" y="153" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="openInSafariWithDoneButton:" destination="ywW-O0-o3P" eventType="touchUpInside" id="fQp-vX-H1p"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2JD-dG-cdW" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="POZ-Uq-2aG"/>
+                            <constraint firstItem="KNK-UX-cYN" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="QzC-Au-rwv"/>
                             <constraint firstItem="H3k-3o-72R" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="YNr-kx-gIE"/>
+                            <constraint firstItem="PAF-Rf-YTL" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="aKn-sJ-chl"/>
                             <constraint firstItem="04I-fM-TPF" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="nIw-JY-EMW"/>
                             <constraint firstItem="QAU-QB-uzG" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="nOy-fh-EAT"/>
                             <constraint firstItem="2pd-fI-gxd" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="uQf-0U-XCL"/>
+                            <constraint firstItem="eaF-Lf-axt" firstAttribute="centerX" secondItem="P1m-i4-HS2" secondAttribute="centerX" id="wO8-3I-QSv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -129,6 +155,7 @@
                         <outlet property="enrollmentTextField" destination="04I-fM-TPF" id="b0W-3S-iLp"/>
                         <outlet property="imageView" destination="2pd-fI-gxd" id="U0V-yX-ve3"/>
                         <outlet property="locationTextField" destination="H3k-3o-72R" id="1Ey-B7-mME"/>
+                        <outlet property="urlTextField" destination="PAF-Rf-YTL" id="V3j-4k-ZlN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvC-7S-euH" userLabel="First Responder" sceneMemberID="firstResponder"/>
